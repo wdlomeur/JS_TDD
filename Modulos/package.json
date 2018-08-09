@@ -1,0 +1,26 @@
+{
+  "name": "Modulos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --colors --progress",
+    "watch": "npm run build -- --watch",
+    "server": ".\\node_modules\\.bin\\webpack-dev-server --inline --open"
+  },
+  "keywords": [],
+  "author": "Wagner Diniz <wagnerdinizlr@gmail.com> (http://www.divafilosofico.com.br/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015-native-modules": "^6.9.4",
+    "babel-preset-es2016-native-modules": "0.0.0",
+    "webpack": "^2.2.0-rc.2"
+  },
+  "dependencies": {
+    "ramda": "^0.25.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "description": ""
+}
