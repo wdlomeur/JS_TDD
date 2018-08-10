@@ -25,7 +25,7 @@
   "homepage": "https://github.com/wdlomeur/JS-TDD#readme",
   "devDependencies": {
     "babel-preset-es2016-native-modules": "0.0.0",
-    "eslint": "^4.0.0",
+    "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.13.0",
@@ -35,6 +35,8 @@
     "webpack-command": "^0.4.1"
   },
   "dependencies": {
-    "ramda": "^0.25.0"
+    "package": "^1.0.1",
+    "ramda": "^0.25.0",
+    "webpack": "^2.2.0-rc.2"
   }
 }
