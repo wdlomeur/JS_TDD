@@ -1,0 +1,44 @@
+{
+  "name": "wdlomeur",
+  "version": "1.0.0",
+  "description": "Nossa biblioteca do curso de JS com TDD na prática.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint.cmd src/*.js",
+    "prepush": "npm run lint",
+    "test": "mocha tests\\**\\*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdlomeur/JS_TDD.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
+  "author": "Wagner Diniz <wagnerdinizlr@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wdlomeur/JS_TDD/issues"
+  },
+  "homepage": "https://github.com/wdlomeur/JS_TDD#readme",
+  "devDependencies": {
+    "babel-preset-es2016-native-modules": "0.0.0",
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.10.0",
+    "husky": "^0.14.3",
+    "mocha": "^5.2.0",
+    "webpack-command": "^0.4.1"
+  },
+  "dependencies": {
+    "package": "^1.0.1",
+    "ramda": "^0.25.0",
+    "webpack": "^2.2.0-rc.2"
+  }
+}
