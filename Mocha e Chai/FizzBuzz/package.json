@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint.cmd src/*.js",
-    "prepush": "npm run lint && npm test:coverage",
+    "prepush": "npm run lint",
     "test": "mocha tests\\**\\*.spec.js --require babel-register",
     "test:tdd": "mocha tests\\**\\*.spec.js --require babel-register --watch",
     "test:coverage": ".\\node_modules\\.bin\\nyc npm run test"
