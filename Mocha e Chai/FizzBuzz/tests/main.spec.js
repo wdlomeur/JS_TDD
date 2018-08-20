@@ -9,7 +9,7 @@ Se o número for divisíivel por 3 e 5, no lugar do número escreva ´FizzBuzz`
 Se não for múltiplo de nada, retornar o número
 */
 import { expect } from 'chai';
-import { FizzBuzz } from '..\\src\\main';
+import FizzBuzz from '..\\src\\main';
 
 describe('Main', () => {
   it('should return ´Fizz´when multiple of 3', () => {
