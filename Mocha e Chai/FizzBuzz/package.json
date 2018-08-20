@@ -1,0 +1,48 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint.cmd src/*.js",
+    "prepush": "npm run lint",
+    "test": "mocha tests\\**\\*.spec.js --require babel-register",
+    "test:tdd": "mocha tests\\**\\*.spec.js --require babel-register --watch",
+    "test:coverage": ".\\node_modules\\.bin\\nyc npm run test"
+  },
+  "nyc": {
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "exclude": [
+      "tests/**"
+    ],
+    "check-coverage": true,
+    "functions": 80,
+    "lines": 80
+  },
+  "author": "Wagner Diniz <wagnerdinizlr@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
+    "package": "^1.0.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "description": "",
+  "linebreak-style": [
+    "error",
+    "windows"
+  ]
+}
