@@ -8,7 +8,7 @@
     "server": ".\\node_modules\\.bin\\webpack-dev-server --inline --open"
   },
   "keywords": [],
-  "author": "Wagner Diniz <wagnerdinizlr@gmail.com> (http://www.divafilosofico.com.br/)",
+  "author": "Wagner Diniz <wagnerdinizlr@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.3",
