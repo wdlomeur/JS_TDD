@@ -4,9 +4,10 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint.cmd src/*.js",
+
     "test": "mocha tests\\**\\*.spec.js --require babel-register",
     "test:tdd": "mocha tests\\**\\*.spec.js --require babel-register --watch",
-    "test:coverage": "nyc npm run test"
+    "test:coverage": ".\\node_modules\\.bin\\nyc npm run test"
   },
   "nyc": {
     "reporter": [
@@ -26,6 +27,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
+    "eslint": "^5.3.0",
     "mocha": "^5.2.0",
     "nyc": "^12.0.2",
     "package": "^1.0.1",
